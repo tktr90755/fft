@@ -1,5 +1,5 @@
-import CanvasController from './canvas-controller.js';
 import { palette } from '../color.js';
+import CanvasController from './canvas-controller.js';
 
 const maxDrawDist = 3;
 
@@ -135,6 +135,7 @@ export default class DrawController extends CanvasController {
                 this.pathEndIndex = this.points.length;
             }
         }
+        console.log(this.points)
     }
 
     render() {
