@@ -1,23 +1,70 @@
-# An Interactive Introduction to Fourier Transforms
-This is the source code for [jezzamon.com/fourier](http://www.jezzamon.com/fourier)
+# Getting Started with Create React App
 
-![](promo/release/combo.gif)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Understanding this code
-This webpage is coded in JavaScript, using [Webpack](https://webpack.js.org/), a tool that merges all the JS files into one and translates it into something compatible with older browsers. It uses [npm](https://www.npmjs.com) to install dependencies and run the build scripts.
+## Available Scripts
 
-It uses some features of modern JavaScript like classes that might not be too familiar to you if you've only done intro JavaScript, but don't let that phase you too much! All the interactivity and graphics is just done with raw JS, no graphic libraries or anything like that.
+In the project directory, you can run:
 
-## Where the interesting files are
-The content of the page is written in Markdown, in [content/content.md](content/content.md). That file gets converted into HTML when the website is built in [script/make-html.js](script/make-html.js)). (If you would like to create a translation for a new language, there are instructions in [content/](content/))!
+### `npm start`
 
-The code for all the interactive elements on the page is under the [js/](js/) folder. Each interactive element has a 'controller' that handles updating and rendering that element (e.g. [EpicyclesController](js/controller/epicycles-controller.js)). There's something that I called a [conductor](js/conductor.js) that handles events and passes them on to each controller. Then they're all created and linked to elements on the page in [main.js](js/main.js).
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The actual Fourier transform is done in [just-fourier-things.js](js/just-fourier-things.js), which is really a wrapper over the [fft.js](https://www.npmjs.com/package/fft.js) library. Sound synth is done in [synth.js](js/synth.js), using the Web Audio API.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-To generate the images used for the JPEG section, I used Python and a Jupyter notebook. That's in [python/dct.ipynb](python/dct.ipynb), and it's fairly readable itself.
+### `npm test`
 
-## Installing stuff
-If you're curious about playing with the code yourself, you'll need to [install npm](https://www.npmjs.com/get-npm). You can then run `npm install` to install all the dependencies. Once that's done, you can run `npm run watch` to start a script that will listen for file changes and rebuild everything, and `npm run reload` to launch a webserver that reloads the page whenever anything changes :)  (warning though: I haven't tried to build things on Windows so not sure how some of the scripts will run there)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-If you want to mess with the python stuff, you'll need [jupyter](https://jupyter.org/), as well as [NumPy](http://www.numpy.org/), [PIL](http://www.pythonware.com/products/pil/), [SciPy](https://www.scipy.org/) and [Matplotlib](https://matplotlib.org/). I recommend using [Anaconda](https://www.anaconda.com/) to install all that.
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

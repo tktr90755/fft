@@ -1,56 +1,41 @@
 {
-  "name": "introduction-to-fourier-transforms",
-  "version": "1.0.0",
-  "description": "",
-  "type": "module",
-  "watch": {
-    "makehtml": {
-      "patterns": [
-        "content/*.md",
-        "script/make-html.js"
-      ],
-      "extensions": "md,js"
-    },
-    "webpack": "js/**/*.js",
-    "css": "css/styles.css",
-    "img": "img/*"
-  },
-  "scripts": {
-    "start": "http-server build",
-    "webpack": "webpack || exit 1",
-    "webpack-prod": "webpack --mode=production || exit 1",
-    "makehtml": "node script/make-html",
-    "css": "cp -r css build/",
-    "img": "cp -r img build/",
-    "preview": "cp preview.png build/",
-    "build": "npm run webpack && npm run makehtml && npm run css && npm run img && npm run preview",
-    "test": "CI=true mocha ./**/*.test.*js",
-    "watch": "npm-watch",
-    "reload": "reload -b -d build"
-  },
-  "author": "Jezzamon",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/cli": "^7.23.4",
-    "@babel/core": "^7.23.7",
-    "@babel/preset-env": "^7.23.8",
-    "babel-loader": "^9.1.3",
-    "chai": "^4.3.6",
-    "front-matter": "^4.0.2",
-    "http-server": "^14.1.1",
-    "mocha": "^10.2.0",
-    "mocha-chai-jest-snapshot": "^1.1.4",
-    "mustache": "^4.2.0",
-    "npm-watch": "^0.11.0",
-    "regenerator-runtime": "^0.14.1",
-    "reload": "^3.2.1",
-    "showdown": "^2.1.0",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
-  },
+  "name": "fft_sample",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4",
     "browser-image-compression": "2.0.2",
     "fft.js": "^4.0.4",
     "matrix-multiplication": "^0.5.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
