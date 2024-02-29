@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Vuetify (Default)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the official scaffolding tool for Vuetify, designed to give you a head start in building your new Vuetify application. It sets up a base template with all the necessary configurations and standard directory structure, enabling you to begin development without the hassle of setting up the project from scratch.
 
-## Available Scripts
+## ❗️ Important Links
 
-In the project directory, you can run:
+- 📄 [Docs](https://vuetifyjs.com/)
+- 🚨 [Issues](https://issues.vuetifyjs.com/)
+- 🏬 [Store](https://store.vuetifyjs.com/)
+- 🎮 [Playground](https://play.vuetifyjs.com/)
+- 💬 [Discord](https://community.vuetifyjs.com)
 
-### `npm start`
+## 💿 Install
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Set up your project using your preferred package manager. Use the corresponding command to install the dependencies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Package Manager                                                | Command        |
+|---------------------------------------------------------------|----------------|
+| [yarn](https://yarnpkg.com/getting-started)                   | `yarn install` |
+| [npm](https://docs.npmjs.com/cli/v7/commands/npm-install)     | `npm install`  |
+| [pnpm](https://pnpm.io/installation)                          | `pnpm install` |
+| [bun](https://bun.sh/#getting-started)                        | `bun install`  |
 
-### `npm test`
+After completing the installation, your environment is ready for Vuetify development.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✨ Features
 
-### `npm run build`
+- 🖼️ **Optimized Front-End Stack**: Leverage the latest Vue 3 and Vuetify 3 for a modern, reactive UI development experience. [Vue 3](https://v3.vuejs.org/) | [Vuetify 3](https://vuetifyjs.com/en/)
+- 🗃️ **State Management**: Integrated with [Pinia](https://pinia.vuejs.org/), the intuitive, modular state management solution for Vue.
+- 🚦 **Routing and Layouts**: Utilizes Vue Router for SPA navigation and vite-plugin-vue-layouts for organizing Vue file layouts. [Vue Router](https://router.vuejs.org/) | [vite-plugin-vue-layouts](https://github.com/JohnCampionJr/vite-plugin-vue-layouts)
+- ⚡ **Next-Gen Tooling**: Powered by Vite, experience fast cold starts and instant HMR (Hot Module Replacement). [Vite](https://vitejs.dev/)
+- 🧩 **Automated Component Importing**: Streamline your workflow with unplugin-vue-components, automatically importing components as you use them. [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+These features are curated to provide a seamless development experience from setup to deployment, ensuring that your Vuetify application is both powerful and maintainable.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 💡 Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This section covers how to start the development server and build your project for production.
 
-### `npm run eject`
+### Starting the Development Server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To start the development server with hot-reload, run the following command. The server will be accessible at [http://localhost:3000](http://localhost:3000):
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+yarn dev
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+(Repeat for npm, pnpm, and bun with respective commands.)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> NODE_OPTIONS='--no-warnings' is added to suppress the JSON import warnings that happen as part of the Vuetify import mapping. If you are on Node [v21.3.0](https://nodejs.org/en/blog/release/v21.3.0) or higher, you can change this to NODE_OPTIONS='--disable-warning=5401'. If you don't mind the warning, you can remove this from your package.json dev script.
 
-## Learn More
+### Building for Production
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To build your project for production, use:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn build
+```
 
-### Code Splitting
+(Repeat for npm, pnpm, and bun with respective commands.)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Once the build process is completed, your application will be ready for deployment in a production environment.
 
-### Analyzing the Bundle Size
+## 💪 Support Vuetify Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is built with [Vuetify](https://vuetifyjs.com/en/), a UI Library with a comprehensive collection of Vue components. Vuetify is an MIT licensed Open Source project that has been made possible due to the generous contributions by our [sponsors and backers](https://vuetifyjs.com/introduction/sponsors-and-backers/). If you are interested in supporting this project, please consider:
 
-### Making a Progressive Web App
+- [Requesting Enterprise Support](https://support.vuetifyjs.com/)
+- [Sponsoring John on Github](https://github.com/users/johnleider/sponsorship)
+- [Sponsoring Kael on Github](https://github.com/users/kaelwd/sponsorship)
+- [Supporting the team on Open Collective](https://opencollective.com/vuetify)
+- [Becoming a sponsor on Patreon](https://www.patreon.com/vuetify)
+- [Becoming a subscriber on Tidelift](https://tidelift.com/subscription/npm/vuetify)
+- [Making a one-time donation with Paypal](https://paypal.me/vuetify)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📑 License
+[MIT](http://opensource.org/licenses/MIT)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Copyright (c) 2016-present Vuetify, LLC

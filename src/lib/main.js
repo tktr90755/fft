@@ -77,11 +77,4 @@ function updateCanvasSizes() {
         canvas.style.height = height + 'px';
     }
 }
-
-
-setTimeout(
-    ()=>{
-        // updateCanvasSizes();
-        init();
-    },2000
-)
+export default init

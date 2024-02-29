@@ -1,42 +1,28 @@
 {
-  "name": "fft_sample",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "./fft",
+  "name": "fft",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS='--no-warnings' vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "browser-image-compression": "2.0.2",
+    "@mdi/font": "7.0.96",
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "roboto-fontface": "*",
+    "vue": "^3.3.0",
+    "vuetify": "^3.0.0",
     "fft.js": "^4.0.4",
     "matrix-multiplication": "^0.5.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "cross-env": "^7.0.3",
+    "sass": "^1.69.0",
+    "unplugin-fonts": "^1.1.0",
+    "unplugin-vue-components": "^0.26.0",
+    "vite": "^5.0.0",
+    "vite-plugin-vuetify": "^2.0.0"
   }
 }
